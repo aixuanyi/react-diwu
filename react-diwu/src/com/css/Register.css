@@ -1,0 +1,47 @@
+#contentor {
+  text-align: center;
+  padding-top: 0.48rem;
+  font-size: 0.12rem;
+}
+#contentor #username {
+  width: 3.2rem;
+  height: 0.4rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#contentor #password {
+  margin-top: 0.18rem;
+  width: 3.2rem;
+  height: 0.4rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#contentor #btn {
+  margin-top: 0.28rem;
+  width: 3.2rem;
+  height: 0.4rem;
+  border: none;
+  background: #bf9d60;
+  font-size: 0.15rem;
+  color: #fff;
+  border-radius: 4px;
+}
+#contentor .icon-yincangmima {
+  color: #ddd;
+  font-size: 0.22rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 1.52rem;
+}
+#contentor .icon-qingkong {
+  color: #ddd;
+  font-size: 0.16rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 1.58rem;
+}
+#contentor p{
+	margin-top: 0.12rem;
+	color: #999;
+}
+/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,52 @@
+@import './lib/reset.scss';
+
+html,body,#root,.container{
+    @include rect(100%, 100%);
+}
+
+.container{
+    @include flexbox();
+    @include flex-direction(column);
+    
+    header#header{
+        @include rect(100%, 0.44rem);
+        @include bgcolor(black);
+    }
+    #content{
+        @include flex();
+        @include rect(100%, auto);
+        overflow: auto;
+    }
+    footer#footer{
+        @include rect(100%, 0.5rem);
+        @include bgcolor(#eee);
+        
+        ul{
+            @include rect(100%, 100%);
+             @include flexbox();
+            li{
+                @include flex();
+                @include rect(auto, 100%);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                @include justify-content();
+                a{
+                    @include flexbox();
+                    @include flex-direction(column);
+                  @include align-items();
+                   @include justify-content();      
+                    @include textcolor(#333);
+                    &.active{
+                    @include textcolor(#f66);
+                }
+                }
+                
+            }
+        }
+    }
+}
+button{
+    width: 50px;
+    height: 50px;
+}

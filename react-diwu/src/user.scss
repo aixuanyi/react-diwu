@@ -1,0 +1,142 @@
+@import './lib/reset.scss';
+
+.info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 49px;
+    background: #ccc;
+    width: 100%;
+    overflow: hidden;
+    background: #f2f2f2;
+    
+    .infotitle{
+        position: relative;
+        height: 192px;
+        background-image: url(back.jpg);
+//      background: gray;
+        background-size: 100% 192px;
+        background-repeat: no-repeat;
+        .info_top{
+            height: 40px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 0 17px;
+            padding-top: 11px;
+            i{
+                font-size: 24px;
+                color: white;
+            }
+        }
+        .user_info{
+            @include flexbox();
+            @include flex-direction(row);
+            margin-top: 20px;
+            i{
+                font-size: 60px;
+                margin-left: 15px;
+                color: white;
+            }
+            .user_info_p{
+                 @include flexbox();
+                 @include flex-direction(column);
+                @include justify-content();
+                margin-left: 15px;
+                .user_desc{
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: \\9ED1\4F53;
+                }
+                .member{
+                    font-size: 14px;
+                    color: white;
+                    font-family: \\9ED1\4F53;
+                }
+            }
+        }
+        
+    }
+    .infocon{
+        position: absolute;
+        top: 192px;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: 300px;
+        .dingdan{
+            background: #fff;
+            margin-bottom: 10px;     
+            .dingdan_title{
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                padding-right: 15px;
+                margin-left: 15px;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 44px;
+                position: relative;
+                span{
+                    font-family: \\9ED1\4F53;
+                    font-size: 14px;
+                    color: #333;
+                }
+            }       
+            .info_paylist_warp{
+                 height: 64px;
+                -webkit-box-align: center;
+                align-items: center;    
+                .info_paylist{
+                    flex: 0 0 75px;
+                     text-align: center;
+                     width: 50px;
+                     display: inline-block;
+                     margin: 0 15px;
+                     a{
+                         color: #7e8c8d;
+                         font-size: 14px;
+                         div{
+                             i{
+                                 font-size: 20px;
+                             }
+                         }
+                     }
+                   
+                     .info_paylist_name{
+                             font-family: \\9ED1\4F53;
+                            font-size: 14px;
+                            color: #333;
+                     }
+                }
+            }
+        }
+    }
+    
+}
+.info_phone{
+    height: 44px;
+    background: #fff;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: \\9ED1\4F53;
+    color: #333;
+    a{
+        font-family: Arial;
+         color: #9b885f;
+    }
+}
